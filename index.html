@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page!!!</title>
+    <style>
+        .main-product-img{
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 2px 2px #36C2CE;
+            margin: 20px auto;
+            display: block;
+        }
+        .product-img{
+            height:180px;
+            width: 140px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px 10px 10px 10px;
+            cursor:pointer;
+            padding: 5px;
+        }
+        .product-img-container{
+            display: flex;
+            justify-content: center;
+        }
+        .heading{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Apple iPhone 15</h1>
+    <img src="img.jpeg" class="main-product-img" id="main-product-img"/>
+
+    <div class="product-img-container">
+        <img src="img1.jpeg" class="product-img" onclick="changeImg(1)"/>
+        <img src="img3.jpeg" class="product-img" onclick="changeImg(2)"/>
+        <img src="img.jpeg" class="product-img" onclick="changeImg(4)"/>
+
+    </div>
+
+    <script>
+        function changeImg(num){
+            const mainImg = document.getElementById("main-product-img");
+            if(num==1){
+                mainImg.src = "img1.jpeg";
+            }
+            else if(num==2){
+                mainImg.src = "img3.jpeg";
+            }
+           
+             else if(num==4){
+                mainImg.src = "img.jpeg";
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
+    
+</body>
+</html>
